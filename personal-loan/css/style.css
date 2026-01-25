@@ -87,6 +87,9 @@
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, .13);
     overflow: hidden;
     width: 100%;
+    position: sticky;
+    height: 56px;
+    top: 0px;
 }
 .bottom_bnr_sticky_nav .sticky_nv_inner_wrapper{
     display: flex;
@@ -96,6 +99,8 @@
 .bottom_bnr_sticky_nav .sticky_nv_item{
     display: flex;
     align-items: center;
+    scrollbar-width: none;
+    overflow-x: auto;
 }
 .bottom_bnr_sticky_nav .sticky_nv_item li{
         line-height: 1.625rem;
@@ -261,6 +266,245 @@
 }
 /* monthSec_start */
 
+/* compareSec_start */
+.compareSec{
+    background: #fff;
+    padding: 30px 0;
+}
+.compareSec .section_heading_32{
+    color: #000;
+    margin-bottom: 32px;
+}
+.compare_table_wrapper table{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-collapse: collapse;
+}
+.compare_table_wrapper table tr td{
+        padding: 5px 5px 5px 0px;
+    vertical-align: top;
+    width: 50%;
+    color: #42484d;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+        line-height: 26px;
+}
+.compare_table_wrapper table tr td .compare_table_title{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+.compare_table_wrapper table tr td .tag_pink{
+    padding: 5px 7px;
+    margin-top: 5px;
+}
+.inter_price{
+        color: rgb(5, 85, 200);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 38px;
+    font-family: Montserrat;
+    display: inline-block;
+    line-height: 1.625rem;
+}
+.inter_special_char{
+    display: flex;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.inter_special_char div{
+        color: rgb(5, 85, 200);
+    white-space: nowrap;
+    display: inline-block;
+}
+.inter_1st_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    padding: 10px 10px 0px;
+}
+.inter_1st_col{
+        color: rgb(5, 85, 200);
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex: 4 4 0px;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+.iter_two_wrap{
+        flex: 2 2 0px;
+    text-align: center;
+    color: #42484d;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+.inter_2nd_col{
+    color: rgb(5, 85, 200);
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex: 4 4 0px;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+.inter_hr{
+    border: 1px solid rgb(204, 204, 204);
+    margin: 8px 0;
+    opacity: 1;
+}
+.inter_special_char2{
+    display: flex;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.inter_special_char2 div{
+    color: rgb(0, 106, 255);
+    white-space: nowrap;
+    display: inline-block;
+}
+.inter_price2{
+    color: rgb(0, 106, 255);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 38px;
+    font-family: Montserrat;
+    display: inline-block;
+    line-height: 1.625rem;
+}
+.compare_list{
+    margin: 0px 0px 0px 24px;
+    padding: 0px;
+    list-style-position: outside;
+}
+.compare_list li{
+    position: relative;
+    margin: 0px;
+    list-style: none;
+    font-weight: 300;
+}
+.compare_list li::before {
+    font-size: 36px;
+    position: absolute;
+    top: 0px;
+    left: -24px;
+    content: "•";
+    color: rgb(99, 184, 255);
+}
+.rate_para{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(66, 72, 77);
+}
+.rate_para strong{
+    font-weight: 700;
+}
+.compare_accordion .accordion-item{
+    border-radius: 0px;
+    font-family: Roboto, sans-serif;
+    color: #42484d;
+    margin-bottom: 4px;
+}
+.compare_accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
+   border-radius: 0px;
+}
+.compare_accordion .accordion-item .accordion-header .accordion-button {
+   background-color: rgb(242, 242, 242) !important;
+   font-weight: bold;
+   justify-content: space-between;
+}
+.compare_accordion .accordion-item .accordion-header .accordion-button.collapsed svg{
+    display: inline-flex;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2.3;
+        width: 14px;
+    height: 8px;
+    transition: transform 0.15s ease-out;
+   transform: rotate(180deg);
+    
+}
+.compare_accordion .accordion-item .accordion-header .accordion-button svg{
+        display: inline-flex;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2.3;
+        width: 14px;
+    height: 8px;
+    transition: transform 0.15s ease-out;
+    transform: rotate(0deg);
+}
+.compare_accordion .accordion-item .accordion-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background: #e6e6e6;
+}
+.compare_accordion .accordion-item .accordion-body p{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(66, 72, 77);
+}
+.compare_accordion .accordion-item .accordion-body p strong{
+    font-weight: 700;
+    display: block;
+}
+.compare_accordion .accordion-item .accordion-button::after{
+    display: none;
+}
+.compare_accordion .accordion-item .accordion-body ul{
+        font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(66, 72, 77);
+    margin: 16px 0;
+    padding-left: 40px;
+}
+.compare_accordion .accordion-item .accordion-body ul li{
+    position: relative;
+    display: block;
+}
+.compare_accordion .accordion-item .accordion-body ul li::before{
+    content: '';
+    width: 4.5px;
+    height: 4.5px;
+    border-radius: 50%;
+    background: rgb(66, 72, 77);
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* compareSec_end */
+
 /* fundSec_start */
 .fundSec{
     padding-bottom: 42px;
@@ -401,6 +645,60 @@ width: 46%;
 }
 /* applySec_end */
 
+/* helpSec_start */
+.helpSec {
+    overflow-x: hidden;
+}
+.helpSec .section_heading_32{
+    color: #000;
+    margin-bottom: 32px;
+}
+
+.helpBox{
+    width: 255px;
+    background: #fff;
+    border-radius: 12px;
+    margin-right: 30px;
+}
+.helpBox .helpBox_img_wrapper img{
+    border-radius: 12px 12px 0 0;
+}
+.helpBox .helpBox_content{
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.helpBox .helpBox_content .card_title_20_black{
+    text-align: left;
+    margin-bottom: 0px;
+    line-height: 1.5rem;
+}
+.helpBox .helpBox_content .card_desc_16_300{
+    color: #4d4d4d;
+    text-align: left;
+    min-height: 96px;
+}
+
+
+#helpSlick .slick-dots li button:before{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #005fee !important;
+    color: transparent;
+}
+#helpSlick .slick-dots li.slick-active button:before{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #005fee !important;
+    border: 1px solid #005fee !important;
+    color: transparent;
+}
+/* helpSec_end */
+
 /* readySec_start */
 .readySec .ready_sec_btn .common_btn_green{
     font-weight: 500;
@@ -470,8 +768,10 @@ width: 46%;
 
 .calculatorBox .calculatorBox_contant{
     border-radius: 16px;
-        display: flex;
+    display: flex;
     gap: 16px;
+    justify-content: space-between;
+    align-items: center;
 }
 .calculatorBox .calculatorBox_contant svg.calculatorBox_icon{
         flex-grow: 0;
@@ -492,6 +792,9 @@ width: 46%;
     max-width: 182px;
     width: 100%;
     flex-grow: 1;
+}
+.calculatorBox .calculatorBox_contant svg.calculatorBox_arrow{
+    width: 32px;
 }
 /* calculatorSec_end */
 
