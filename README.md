@@ -14,7 +14,7 @@ Here is all the classes
 .section_heading_24
 .section_heading_40
 .commn_para_18
-.commn_para_16
+.commn_para_16card_title_24
 
 <!-- section -->
 .commn_bnr

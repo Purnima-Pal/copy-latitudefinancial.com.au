@@ -764,6 +764,9 @@ flex: 0 0 auto;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(218, 227, 231);
   }
+  .rateaccor .accordion_inner_row:last-child{
+    border-bottom: 0px;
+  }
   .rateaccor .accordion_inner_col{
     padding: 10px 0px;
     border-radius: 0px;
@@ -779,8 +782,36 @@ flex: 0 0 auto;
 }
 @media (min-width: 760px) {
       .rateaccor .accordion_inner_col:nth-of-type(2) {
-        width: 70%;
+        width: 66%;
     }
+}
+.rateaccor .accordion_link_container{
+    display: flex;
+    gap: 20px;
+    padding-top: 3px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-bottom: none;
+}
+.rateaccor .accordion_link{
+    padding: 10px 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    width: 100%;
+}
+.rateaccor .accordion_link a{
+    border-bottom: 1px solid rgba(0, 106, 255, .5);
+    color: #006aff;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.rateaccor .accordion_link a:hover{
+        border-bottom: 1px solid #006aff;
+    text-shadow: 0 0 1px #006aff;
 }
 /* rateSec_end */
 
@@ -898,13 +929,16 @@ display: flex;
 .eligibilityBox_content_wrap > :not(:last-child) {
     margin-bottom: 16px;
 }
-.eligibilityBox_content_wrap p{
+.eligibilityBox_content_wrap{
     margin-bottom: 8px;
     color: #42484d;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.625rem;
     font-weight: 700 ;
+}
+.eligibilityBox_content_wrap p:not(.card_title_24){
+    margin-bottom: 8px;
 }
 .eligibilityBox_content_wrap ul{
     padding: 0;
@@ -931,7 +965,47 @@ display: flex;
     background: rgb(99, 184, 255);
     
 }
-/* eligibilitySec_end */
+/* eligibilitySec_end *
+
+/* missSec_start */
+.missSec .section_heading_32{
+    color: #fff;
+    padding-bottom: 32px;
+}
+.missBox_wrapper{
+    display: flex;
+    align-items: stretch;
+    gap: 35px;
+}
+.missBox{
+    background: #fff;
+    width: 350px;
+    border-radius: 16px;
+}
+.missBox_imgWrapper img{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+.missBox_contentWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 25px;
+}
+.missBox_contentWrapper .card_title_22{
+    color: #000;
+}
+.missBox_contentWrapper .card_desc_18{
+    min-height: 84px;
+    margin-bottom: 0px;
+        color: #4d4d4d;
+}
+.missBox_contentWrapper .common_btn_blue{
+    width: fit-content;
+    height: 56px;
+    font-weight: 500;
+}
+/* missSec_end */
 
 /* offerSec_start */
 .offerSec{
@@ -1010,6 +1084,9 @@ display: flex;
 #optionTabContent .tabCol{
     flex: 1 1 33%;
 }
+#optionTabContent .tabCol.tabcol_76{
+     flex: 1 1 76%;
+}
 #optionTabContent .tabCol.font_14{
         font-size: 14px;
     line-height: 1.5;
@@ -1017,6 +1094,22 @@ display: flex;
     margin: 0px auto 24px;
     text-align: left;
         color: rgb(66, 72, 77);
+        font-weight: 300;
+            font-family: Roboto, "Open Sans", sans-serif;
+}
+#optionTabContent .tabCol.font_14 strong{
+    font-weight: 700;
+}
+#optionTabContent .tabCol.font_16{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: rgb(66, 72, 77);
 }
 @media (min-width: 768px) {
 #optionTabContent .tabCol.font_14 {
@@ -1068,6 +1161,16 @@ display: flex;
     flex: 1 1 auto;
     margin-right: 8px;
 }
+.tab_left_btn_wrapper{
+     display: flex;
+    align-items: center; 
+}
+.tab_left_btn_wrapper a{
+    flex: 1 1 50%;
+    margin:0px 8px;
+    height: 47px;
+}
+
 .no_fees{
         background-color: rgb(255, 255, 255);
     padding: 12px 24px;
@@ -1095,6 +1198,20 @@ display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     counter-increment: num-list 1;
+}
+.num_list li p{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(66, 72, 77);
+}
+.num_list li p strong{
+    font-weight: 700;
 }
 .num_list li p:last-child{
     margin-bottom: 0px;
